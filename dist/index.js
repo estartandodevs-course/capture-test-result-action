@@ -1969,10 +1969,12 @@ var __webpack_exports__ = {};
 (() => {
 const fs = __nccwpck_require__(147);
 const core = __nccwpck_require__(469);
-const jestOuputFile = fs.readFileSync("./result.json");
-const data = JSON.parse(jestOuputFile)
+
 
 try {
+  const resultPath = core.getInput('resultPath');
+  const jestOuputFile = fs.readFileSync(resultPath);
+  const data = JSON.parse(jestOuputFile)
   core.setOutput("resultOfOutputTests", JSON.stringify(data));
 } catch (error) {
   core.setFailed(error.message);

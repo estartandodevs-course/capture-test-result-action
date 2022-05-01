@@ -1,5 +1,10 @@
 name: "Read Result of tests"
 description: "Greet someone and record the time"
+inputs:
+  resultPath: # id of input
+    description: "Path to result file"
+    required: false
+    default: "./result.json"
 outputs:
   resultOfOutputTests:
     description: "A result of tests parsed to string"
