@@ -1,0 +1,8 @@
+name: "Read Result of tests"
+description: "Greet someone and record the time"
+outputs:
+  resultOfOutputTests:
+    description: "A result of tests parsed to string"
+runs:
+  using: "node16"
+  main: "dist/index.js"
