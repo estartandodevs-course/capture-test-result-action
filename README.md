@@ -59,3 +59,5 @@ jobs:
 | --- | --- | --- |
 | `resultPath` | caminho para o arquivo exportado pelo jest | `./result.json` |
 
+>Como criar uma [gh-action](https://docs.github.com/pt/actions/creating-actions/creating-a-javascript-action)
+
