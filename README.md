@@ -4,6 +4,14 @@ Uma GitHub action para capturar o resultado dos testes do jest exportados para u
 
 Essa ação foi criada para ajudar a avaliar os trabalhos dos alunos.
 
+## Configuração para jest
+
+```json
+"scripts": {
+    "test": "jest --json --outputFile=/tmp/result.json"
+  }
+```
+
 ## Como usar
 
 ```yml
